@@ -1,10 +1,8 @@
-import { useState } from 'react'
+import Login from "./pages/Login";
 
 function App() {
-
-  return (
-    <div className="bg-red-500">Hiii</div>
-  )
+  return <Login />;
 }
 
-export default App
+export default App;
+
