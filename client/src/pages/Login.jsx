@@ -93,8 +93,8 @@ export default function Login() {
                     className="w-30 h-30 bg-center bg-contain bg-no-repeat ml-3"
                     style={{ backgroundImage: `url(${logo})` }}
                     />
-                <div className="sm:text-[25px] text-white text-center dark:text-black ml-2">National Institute of Technology,</div>
-                <div className="sm:text-[23px] dark:text-black text-white relative bottom-2 ml-1.5">Agartala</div>
+                <div className="sm:text-[25px] text-white text-center dark:text-blue-800 ml-2 font-semibold">National Institute of Technology,</div>
+                <div className="sm:text-[23px] dark:text-blue-800 text-white relative bottom-2 ml-1.5 font-semibold">Agartala</div>
             </div>
             <div className="dark:text-black text-white flex flex-col justify-center items-center gap-3 dark:bg-transparent bg-black/60 p-2 rounded-lg">
                 <div className="text-2xl mt-0 font-semibold">Welcome! Please Login</div>
@@ -140,7 +140,7 @@ export default function Login() {
                             w-full
                             pl-9
                             p-1.5
-                            border border-white/50 dark:border-white/20
+                            border border-white/50 lg:border-white/20
                             bg-transparent
                             outline-none
                         "
@@ -149,7 +149,7 @@ export default function Login() {
                     </div>):
                     (<div className="text-sm space-y-3 w-full mt-3">
                     {/* Email */}
-                    <div className="relative">
+                    <div className="relative dark:bg-white">
                         <HiOutlineUser
                         className="absolute left-2.5 top-1/2 -translate-y-1/2
                                     dark:text-gray-800 text-lg"
@@ -161,7 +161,7 @@ export default function Login() {
                             w-full
                             pl-9
                             p-1.5
-                            border border-white/50
+                            border border-white/50 lg:border-white/20
                             bg-transparent
                             outline-none
                         "
@@ -169,7 +169,7 @@ export default function Login() {
                     </div>
 
                     {/* Password */}
-                    <div className="relative">
+                    <div className="relative dark:bg-white">
                         <HiOutlineLockClosed
                         className="absolute left-2.5 top-1/2 -translate-y-1/2
                                     dark:text-gray-800 text-lg"
@@ -181,7 +181,7 @@ export default function Login() {
                             w-full
                             pl-9
                             p-1.5
-                            border border-white/50
+                            border  border-white/50 lg:border-white/20
                             bg-transparent
                             outline-none
                         "
@@ -191,7 +191,7 @@ export default function Login() {
                 }
 
                 <div className="text-end text-sm text-blue-800 cursor-pointer mt-4 w-full">
-                    <div className="ml-55 font-semibold dark:text-yellow-200 lg:dark:text-orange-200  rounded-sm pr-0.5">Forgot Password?</div></div>
+                    <div className="ml-55 font-[650] dark:text-blue-200 lg:dark:text-blue-200  rounded-sm pr-0.5">Forgot Password?</div></div>
                 <button className="bg-blue-800/85 w-full rounded-sm p-1.5 cursor-pointer text-base font-medium text-gray-300">Login</button>
             </div>
         </div>
