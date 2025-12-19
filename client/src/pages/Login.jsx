@@ -30,7 +30,7 @@ export default function Login() {
 
   return (
     <div
-      className="h-screen w-screen bg-cover bg-center relative flex items-center justify-center"
+      className="h-[98vh] w-full bg-cover bg-center relative flex items-center justify-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
     <div className="">
@@ -103,7 +103,7 @@ export default function Login() {
                     ${userType === "Student" ? "bg-blue-800 dark:text-white" : "bg-transparent dark:text-blue-800"}
                 
                       text-gray-300 rounded-sm py-1.5`} onClick={() => setUserType("Student")}>Student Login</button>
-                    <button onClick={() => setUserType("Admin")} className={`px-6 rounded-sm text-gray-300 cursor-pointer  ${userType === "Admin" ? "bg-blue-800 dark:text-white" : "bg-transparent dark:text-blue-800"}`}>Admin Login</button>
+                    <button onClick={() => setUserType("Admin")} className={`px-2.5 sm:px-6 rounded-sm text-gray-300 cursor-pointer  ${userType === "Admin" ? "bg-blue-800 dark:text-white" : "bg-transparent dark:text-blue-800"}`}>Admin Login</button>
                 </div>
                 {userType === "Student" ?(
                     <div className="text-sm dark:text-grey-900 space-y-3 w-full mt-3 ">
@@ -191,7 +191,7 @@ export default function Login() {
                 }
 
                 <div className="text-end text-sm text-blue-800 cursor-pointer mt-4 w-full">
-                    <div className="ml-55 font-[650] dark:text-blue-200 lg:dark:text-blue-200  rounded-sm pr-0.5">Forgot Password?</div></div>
+                    <div className="sm:ml-55 font-[650] dark:text-blue-200 lg:dark:text-blue-200  rounded-sm pr-0.5">Forgot Password?</div></div>
                 <button className="bg-blue-800/85 w-full rounded-sm p-1.5 cursor-pointer text-base font-medium text-gray-300">Login</button>
             </div>
         </div>
